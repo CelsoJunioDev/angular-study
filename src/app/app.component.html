@@ -1,2 +1,13 @@
-<h1>AppComponent</h1>
-<app-menu></app-menu>
+<h1>Router Teste</h1>
+<nav>
+  <ul>
+    <li><a [routerLink]="['/menu']" routerLinkActive="router-link-active">Menu</a></li>
+    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/usuario" routerLinkActive="active">Usuário</a></li>
+    <li><a routerLink="/footer" routerLinkActive="active">Footer</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
+
+
