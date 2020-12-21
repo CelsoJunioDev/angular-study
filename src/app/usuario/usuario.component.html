@@ -16,3 +16,20 @@
 <div>
   <span> {{usuario.email}} </span>
 </div>
+
+<!-- lista de usuarios -->
+<h3>Lista de usuários</h3>
+<table border="1">
+  <tr>
+    <th>nome</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let users of usuarios;">
+    <td>
+      {{users.nome}}
+    </td>
+    <td>
+      {{users.email}}
+    </td>
+  </tr>
+</table>
